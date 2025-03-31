@@ -5,20 +5,19 @@
   <title>Wagner Reifen – Ankauf & Verkauf</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background: #1a1a1a;
+      background-color: #1a1a1a;
       color: white;
       padding: 40px 20px;
       text-align: center;
@@ -30,8 +29,13 @@
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #ccc;
+    }
+
+    .full-image {
+      width: 100%;
+      display: block;
     }
 
     section {
@@ -40,72 +44,29 @@
     }
 
     h2 {
-      margin-bottom: 30px;
       font-size: 2rem;
-      color: #222;
-    }
-
-    .bild-galerie {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .bild-container {
-      position: relative;
-      width: 350px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .bild-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      filter: brightness(80%);
-      transition: 0.3s ease;
-    }
-
-    .bild-container:hover img {
-      filter: brightness(100%);
-    }
-
-    .bild-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 15px 25px;
-      font-size: 1.2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
     }
 
     .kontakt, footer {
-      background-color: #fff;
+      background-color: white;
       padding: 30px 20px;
-      margin-top: 20px;
     }
 
     footer {
       background: #eaeaea;
-      color: #555;
       text-align: center;
       font-size: 0.9rem;
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
-      .bild-galerie {
-        flex-direction: column;
-        align-items: center;
+      header h1 {
+        font-size: 2rem;
       }
 
-      .bild-container {
-        width: 90%;
+      h2 {
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -117,19 +78,9 @@
     <p>Ankauf & Verkauf von Reifen – Qualität & Service</p>
   </header>
 
-  <section>
-    <h2>Unsere Angebote</h2>
-    <div class="bild-galerie">
-      <div class="bild-container">
-        <img src="wagnerreifen/BR1.jpeg" alt="Reifen 1">
-        <div class="bild-text">Top Reifenangebot</div>
-      </div>
-      <div class="bild-container">
-        <img src="wagnerreifen/BR2.jpeg" alt="Reifen 2">
-        <div class="bild-text">Jetzt zugreifen!</div>
-      </div>
-    </div>
-  </section>
+  <!-- Volle Bilder über die ganze Seite -->
+  <img src="wagnerreifen/BR1.jpeg" alt="Reifen 1" class="full-image">
+  <img src="wagnerreifen/BR2.jpeg" alt="Reifen 2" class="full-image">
 
   <section class="kontakt">
     <h2>Kontakt</h2>
