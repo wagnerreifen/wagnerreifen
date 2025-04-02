@@ -46,7 +46,8 @@
 
     .bilder-container img {
       width: 48%;
-      max-width: 600px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -74,7 +75,6 @@
       margin-top: 40px;
     }
 
-    /* Handy: Vollflächig */
     @media (max-width: 768px) {
       .bilder-container {
         flex-direction: column;
@@ -86,11 +86,7 @@
         width: 100%;
         border-radius: 0;
         box-shadow: none;
-      }
-
-      header, section, .kontakt, footer {
-        padding-left: 0;
-        padding-right: 0;
+        aspect-ratio: auto;
       }
 
       header h1 {
